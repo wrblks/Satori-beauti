@@ -1,0 +1,15 @@
+# Prompt do stworzenia strony Satori Beauti
+
+Zbuduj kompletną, responsywną polskojęzyczną stronę marki Satori Beauti w repozytorium wrblks/Satori-beauti. Wykorzystaj rzeczywiste logo i dokumenty z udostępnionego folderu. Zachowaj nazwę repozytorium i pisownię marki wskazaną przez właściciela; logo zawiera napis Satori Beauty.
+
+Kierunek wizualny: jasny butikowy gabinet beauty, kremowa biel, pudrowy róż, szałwia i ciepła szarość. Dużo przestrzeni, eleganckie nagłówki szeryfowe, czytelny tekst bezszeryfowy, subtelne linie, asymetryczny hero z oryginalnym logo w łukowej kompozycji. Projekt ma być nowoczesny, spokojny i dopracowany na telefonie oraz komputerze. Nie używaj generycznych zdjęć lekarzy, fikcyjnych efektów przed/po ani ciężkich animacji.
+
+Sekcje: hero z jasnym CTA, filozofia marki, tematy pielęgnacji do omówienia, Sandra Wróblewska i edukacja, galeria prawdziwych certyfikatów z dostępnym podglądem, przygotowanie do pierwszej wizyty, karta klienta PDF do pobrania, FAQ, kontakt i informacje o prywatności.
+
+Treść oprzyj na przeczytanych dokumentach. Certyfikaty potwierdzają ukończenie szkoleń, a nie zawód lekarza, dostępność sprzętu ani aktualną ofertę. Nie przypisuj tytułu lekarza lub kosmetologa bez dokumentu. Nie wymyślaj cen, adresu, telefonu, opinii, doświadczenia, liczby klientów ani gwarancji efektów. Zakres szkoleń: roczna szkoła JS Medical Solutions; teoria medycyny estetycznej i kosmetologii; zabiegi kosmetologiczne dermabrazji; urządzenia kosmetyczne i medyczne; mezoterapia i lipoterapia; biostymulatory; zabiegi autologiczne; wypełniacze HA i Masterclass; Lips Master; nici PDO; toksyna botulinowa typu A; biznes i prawo w branży beauty. Pokazuj je w sekcji edukacji. Oferta zabiegów wymaga potwierdzenia właściciela.
+
+Karta klienta: estetyczny, czytelny polski PDF A4 do druku, dane podstawowe, potrzeby, dotychczasowa pielęgnacja, pytania do rozmowy przed zabiegiem i pole dla osoby kwalifikującej. Oznacz jako kartę wstępną; nie traktuj jako uniwersalnej kwalifikacji ani zgody na wszystkie zabiegi. Informacje zdrowotne przekazywane osobiście, bez wysyłania formularzem. Nie zbieraj PESEL ani zbędnych danych. Dokładny wywiad, przeciwwskazania, zgoda, zalecenia i klauzula prywatności wymagają dopasowania do konkretnego świadczenia.
+
+Kontakt: imię, e-mail, temat i wiadomość, walidacja, dostępne etykiety, brak danych zdrowotnych, brak pozorowanych komunikatów wysłania. Jeśli nie podano odbiorcy, udostępnij przygotowanie treści do skopiowania i jasno poinformuj o niewysyłaniu. Po uzupełnieniu e-maila otwieraj klienta pocztowego z zakodowaną treścią. Nie wymyślaj endpointu. Dane kontaktowe trzymaj w config.js, bez sekretów.
+
+Technika: statyczne HTML/CSS/JS, lokalne zasoby, bez wymaganych zależności i bez śledzenia, względne ścieżki zgodne z GitHub Pages /Satori-beauti/. Semantyczny HTML, jedna hierarchia nagłówków, klawiatura, widoczny fokus, menu mobilne, Escape, dialog, reduced motion, alt, SEO title i description. Dołącz README, prompt i skrypt odtwarzania karty PDF. Sprawdź JS, linki, PDF i widoki desktop/mobile. Zapisz kompletny projekt w repozytorium, raportując realne ograniczenia i brakujące dane.
