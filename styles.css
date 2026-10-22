@@ -24,7 +24,7 @@
 .training-summary-copy{display:block;flex:1}
 .training-summary-title{display:block;font:25px/1.3 Georgia,serif}
 .training-summary-note{display:block;font-size:11px;color:var(--muted);margin-top:5px}
-.training-count{font-size:10px;color:#67735c;letter-spacing:.4px;white-space:nowrap}
+.training-count{display:inline-block;font-size:10px;color:#67735c;letter-spacing:.4px;white-space:nowrap}
 .training-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 30px;padding:0 28px 15px;border-top:1px solid #dde2d4;background:var(--paper)}
 .training-panel .training-card p{padding:0}
 .training-panel .training-card{min-width:0}
