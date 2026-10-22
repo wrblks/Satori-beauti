@@ -26,8 +26,18 @@ const seal=document.createElement('div');seal.className='education-seal';seal.se
 const featureCopy=document.createElement('div');featureCopy.className='education-feature-copy';
 featureCopy.innerHTML='<p class="eyebrow">FUNDAMENT EDUKACJI</p><h3>Roczna szkoła<br>medycyny estetycznej</h3><p>JS Medical Solutions <span aria-hidden="true">·</span> Sandra Wróblewska</p>';
 const featureLinks=document.createElement('div');featureLinks.className='feature-links';featureLinks.append(documentLink(0),documentLink(13,'Zobacz wykaz zajęć'));featureCopy.append(featureLinks);featured.append(seal,featureCopy);certGrid.before(featured);
-groups.forEach((group,index)=>{const section=document.createElement('section');section.className='training-group';const top=document.createElement('div');top.className='training-group-heading';top.append(makeIcon(group.icon));const heading=document.createElement('h3');heading.id='training-group-'+index;heading.textContent=group.title;section.setAttribute('aria-labelledby',heading.id);top.append(heading);const note=document.createElement('p');note.textContent=group.note;top.append(note);section.append(top);
- group.items.forEach(i=>{const article=document.createElement('article');article.className='training-card';const h=document.createElement('h4');h.textContent=training[i][0];const issuer=document.createElement('p');issuer.textContent='JS Medical Solutions';article.append(h,issuer,documentLink(i));section.append(article)});certGrid.append(section);});
+groups.forEach((group,index)=>{
+ const section=document.createElement('details');section.className='training-group training-accordion';
+ const top=document.createElement('summary');top.className='training-group-heading';top.append(makeIcon(group.icon));
+ const copy=document.createElement('span');copy.className='training-summary-copy';
+ const heading=document.createElement('span');heading.className='training-summary-title';heading.textContent=group.title;
+ const note=document.createElement('span');note.className='training-summary-note';note.textContent=group.note;
+ copy.append(heading,note);top.append(copy);
+ const count=document.createElement('span');count.className='training-count';count.textContent=group.items.length+' '+(group.items.length===1?'szkolenie':group.items.length<5?'szkolenia':'szkoleń');top.append(count);
+ section.append(top);const cards=document.createElement('div');cards.className='training-panel';
+ group.items.forEach(i=>{const article=document.createElement('article');article.className='training-card';const h=document.createElement('h4');h.textContent=training[i][0];const issuer=document.createElement('p');issuer.textContent='JS Medical Solutions';article.append(h,issuer,documentLink(i));cards.append(article)});
+ section.append(cards);certGrid.append(section);
+});
 let certificateOpener=null;
 function openCert(title,file,opener){certificateOpener=opener;dialog.querySelector('img').src='assets/'+file;dialog.querySelector('img').alt='Oryginalny dokument — '+title;dialog.querySelector('#cert-title').textContent=title;dialog.querySelector('.original-link').href='assets/'+file;dialog.showModal();}
 dialog.addEventListener('close',()=>{if(certificateOpener)certificateOpener.focus()});
